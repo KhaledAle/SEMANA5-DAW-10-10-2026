@@ -1,0 +1,73 @@
+/* PASO 4: Estilos encapsulados por componente mediante CSS Modules. */
+.metricCard {
+  min-width: 0;
+  padding: 16px 17px 15px;
+  border: 1px solid #e8ece9;
+  border-top: 2px solid #005e44;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(27, 47, 37, .035);
+}
+
+.gold {
+  border-top-color: #cbb36d;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  overflow: hidden;
+  color: #748078;
+  font-size: 9px;
+  font-weight: 550;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value {
+  margin-top: 13px;
+  color: #1d3429;
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: -.05em;
+  line-height: 1;
+}
+
+.cardBottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-top: 11px;
+  color: #929c96;
+  font-size: 8px;
+}
+
+.cardBottom strong {
+  color: #398160;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.gold .cardBottom strong {
+  color: #9b7b2d;
+}
+
+@media (max-width: 560px) {
+  .metricCard {
+    padding: 12px 11px;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .value {
+    font-size: 21px;
+  }
+}

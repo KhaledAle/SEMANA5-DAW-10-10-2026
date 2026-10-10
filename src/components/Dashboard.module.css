@@ -1,0 +1,70 @@
+/* PASO 4: CSS Modules aíslan las clases y evitan colisiones de estilos. */
+.dashboard {
+  width: 100%;
+}
+
+.pageHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 31px 0 23px;
+}
+
+.eyebrow {
+  color: #829087;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.pageHeading h1 {
+  margin: 7px 0 5px;
+  color: #1b2e25;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 650;
+  letter-spacing: -.04em;
+}
+
+.pageHeading p {
+  margin: 0;
+  color: #839089;
+  font-size: 11px;
+}
+
+.periodBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  border: 1px solid #e4e9e6;
+  border-radius: 6px;
+  color: #49584f;
+  background: #fff;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.periodBadge span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #cbb36d;
+}
+
+@media (max-width: 560px) {
+  .pageHeading {
+    align-items: flex-start;
+    gap: 14px;
+    padding-top: 24px;
+  }
+
+  .pageHeading h1 {
+    font-size: 22px;
+  }
+
+  .periodBadge {
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+}

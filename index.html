@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#005E44" />
+    <meta name="description" content="Dashboard de control académico de la Facultad de Ingeniería de Sistemas de la UNCP." />
+    <title>Control Académico | Ingeniería de Sistemas UNCP</title>
+  </head>
+  <body>
+    <!--
+      PASO 5: Bloque de auditoría técnica y validación de Client-Side Rendering
+      (CSR) frente al DOM inicial en index.html. En la respuesta HTML inicial solo existe #root vacío:
+      el contenido del dashboard NO está prerenderizado en el DOM. src/main.jsx
+      ejecuta createRoot(...).render(...) en el navegador y React crea la interfaz
+      en el cliente. Para comparar, inspeccionar "Ver código fuente" frente al DOM
+      del panel Elements después de cargar la página: el segundo sí tendrá el árbol.
+    -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

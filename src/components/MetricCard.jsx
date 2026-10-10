@@ -1,7 +1,7 @@
 import styles from './MetricCard.module.css'
 
 /**
- * Reusable academic KPI card. The icon/content is composed via children.
+ * Carta KPI académica reutilizable. El icono/contenido se compone a través de children.
  *
  * @param {{ title: string, value: string, detail: string, caption: string, tone?: 'green' | 'gold', children: import('react').ReactNode }} props
  */

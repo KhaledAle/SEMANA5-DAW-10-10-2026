@@ -1,9 +1,8 @@
 import styles from './Dashboard.module.css'
 
 /**
- * Presentational dashboard layout. It receives page copy through props and
- * renders its content through children, keeping data ownership in App.
- *
+ * Layout presentacional del dashboard. Recibe el contenido de la página a través de props y
+ * renderiza su contenido a través de children, manteniendo la propiedad de los datos en App.
  * @param {{ eyebrow: string, title: string, description: string, period: string, children: import('react').ReactNode }} props
  */
 function Dashboard({ eyebrow, title, description, period, children }) {
